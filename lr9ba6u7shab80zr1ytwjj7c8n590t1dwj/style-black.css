@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+body {
+	margin: 0;
+	padding: 0;
+	color: #ddd;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+}
+img {
+	max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0; 
+}
+* {
+	box-sizing: border-box;
+}
+.wrapper-Blackse {
+	font-family: "Scope One", serif;
+}
+/*********************
+// Start Homepage //
+***********************/
+.page-template-full_width_common .mid-Section {
+	padding: 0;
+}
+.ban-Blackse {
+	background:url(banner.jpg) no-repeat center center/cover;
+	padding: 60px 0;
+	text-align: center;
+	position:relative;
+	color:#fff;
+}
+.ban-Blackinse {
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position:relative;
+	z-index:1;
+}
+.ban-Blackse:before {
+	-moz-transition: opacity 3s ease;
+	-webkit-transition: opacity 3s ease;
+	-ms-transition: opacity 3s ease;
+	transition: opacity 3s ease;
+	-moz-transition-delay: 1.25s;
+	-webkit-transition-delay: 1.25s;
+	-ms-transition-delay: 1.25s;
+	transition-delay: 1.25s;
+	content: '';
+	display: block;
+	background-color: #000;
+	height: 100%;
+	left: 0;
+	opacity: 0.65;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	 animation-name: bg-clr;
+  animation-duration: 3s;
+}
+ @keyframes bg-clr {
+  0%   {opacity: 1;}
+   25%  {opacity: 0.95;} 
+  50%  {opacity: 0.85;}
+  75%  {opacity: 0.75;}
+  100% {opacity: 0.65;}
+}
+.ban-Wraptxt > h1 {
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 60px;
+	padding-bottom: 20px;
+	font-family: "Scope One", serif;
+}
+.ban-Wraptxt > p { 
+	font-size:22px;
+	line-height: 32px; 
+}
+.ban-Wraptxt .button.big.scrolly {
+	background:#3498db;
+	color: #fff;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 20px 30px;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-top:50px;
+	-webkit-transition: al 400ms ease-in-out 0s;
+	-moz-transition: al 400ms ease-in-out 0s;
+	-ms-transition: al 400ms ease-in-out 0s;
+	-o-transition: al 400ms ease-in-out 0s;
+	transition: al 400ms ease-in-out 0s;
+}
+.ban-Wraptxt .button.big.scrolly:hover, .ban-Wraptxt .button.big.scrolly:focus {
+	background: #4aa3df; 
+	color: #fff;
+}
+
+.berlin-Mainse, .blue-Mainse, .germn-Mainse {
+	padding: 100px 0;
+}
+.berlin-Mainse, .germn-Mainse {
+	background: #fafafa;
+}
+.blue-Mainse {
+	background: #3498db;
+	color: #fff;
+}
+.berlin-Imgse.rounded-Imgse {
+	text-align: center;
+}
+.rounded-Imgse > img {
+	border-radius: 50%;
+	border: 8px solid #fff;
+	box-shadow: 0 0 8px 1px rgba(0,0,0,0.095);
+}
+.germn-Inse {
+	text-align: center;
+}
+.germn-Txtse {
+	text-align: center;
+	padding-top: 30px;
+}
+.germn-Txtse > p {
+	font-size: 18px;
+	line-height: 28px;
+	color: #999999;
+}
+.berlin-Rigtxt > h3 {
+	font-size: 30px;
+	font-weight: 600;
+	padding-bottom: 20px;
+	font-family: "Scope One", serif;
+}
+.berlin-Rigtxt > p br, .germn-Txtse > p br, .germn-Inse > h3 br {
+	display: none;
+}
+.berlin-Rigtxt > p {
+	margin: 0;
+	font-size: 18px;
+	color: #999;
+}
+.blue-Mainse .berlin-Rigtxt > p {
+	color: #aed6f1;
+}
+.berlin-Rigtxt > p + p {
+	padding-top:20px;
+}
+.germn-Inse > h3 {
+	font-size:20px;
+	line-height:30px;
+	color:#bfbfbf; 
+	font-family: "Scope One", serif;
+}
+.ger-Imgse {
+	margin-top: 40px;
+}
+footer, header {
+	color: #999;
+	display: none;
+}
+/**********************
+//Media Query Start//
+*************************/
+ @media screen and (max-width:991px) {
+.ban-Wraptxt > h1 { 
+	font-size: 40px;
+	line-height: 40px; 
+}
+	 .berlin-Mainse, .blue-Mainse, .germn-Mainse, .ban-Blackse {
+	padding: 50px 0;
+	text-align:center;
+}
+.col-lg-8.order-first {
+	order: inherit;
+}
+ .berlin-Imgse {
+	margin-bottom: 30px;
+}
+.ban-Wraptxt > p {
+	font-size: 18px;
+	line-height: 28px;
+}
+.ban-Wraptxt .button.big.scrolly {
+ 
+	padding: 15px 30px;
+	font-size: 20px; 
+	line-height: 20px;
+	margin-top: 30px;
+ 
+}
+}
+ @media screen and (max-width:767px) {
+	 .ban-Wraptxt > h1 { 
+	font-size: 30px;
+	line-height: 30px; 
+}
+ .ban-Wraptxt > p, .berlin-Rigtxt > p {
+	font-size: 16px;
+	line-height: 26px;
+}
+.berlin-Rigtxt > h3 {
+	font-size: 24px; 
+}
+.germn-Inse > h3 {
+	font-size: 18px;
+	line-height: 27px; 
+}
+}
+ 
